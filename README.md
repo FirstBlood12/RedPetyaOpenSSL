@@ -95,7 +95,7 @@ then RedPetyakernel prints Incorrect key and asks for key again.
 and writing it to sector 0, it will also do the same to sector 1-33.
 10. If disk ID of the MBR is 0x37373737 then RedPetya kernel will decrypt additional sectors always with XOR 0x37(Decrypting Backup GPT Header)
 
-#Salsa10 Encryption Cracked!
+# Salsa10 Encryption Cracked!
 Just after a month of Red Petya appereance in 2016 someone has managed to crack Salsa10 in seconds using Genetic Algorithms.
 https://github.com/leo-stone/hack-petya
 The program needs the encrypted sector 55 with Salsa10 and 8 byte nonce from sector 54 and it recovers the original key in seconds.
