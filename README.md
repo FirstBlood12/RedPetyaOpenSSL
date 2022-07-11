@@ -5,7 +5,7 @@ In order to work on GPT disks, UEFI needs to support Legacy boot.
 
 # How It Works?
 
-This RedPetyaOpenSSL project works exactly as original Red Petya
+This RedPetyaOpenSSL project works exactly as original Red Petya,
 It uses OpenSSL library for public key cryptography.
 
 # How Red Petya Infects MBR Disk?
