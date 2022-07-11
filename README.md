@@ -112,7 +112,7 @@ This program doesnt works on NotPetya because NotPetya Salsa20 keys are not encr
 As well it doesnt works for PetrWrap ransomware which is based on Mischa v2 DLL:
 https://securelist.com/petrwrap-the-new-petya-based-ransomware-used-in-targeted-attacks/77762/
 Because they choose different curve prime192v1 or secp192r1 and they use their own public and private key.
-But petya_key works for RedPetyaOpenSSL.
+petya_key works for RedPetyaOpenSSL as well.
 
 # Prerequisites:
 
