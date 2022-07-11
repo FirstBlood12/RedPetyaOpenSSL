@@ -101,7 +101,7 @@ https://github.com/leo-stone/hack-petya
 The program needs the encrypted sector 55 with Salsa10 and 8 byte nonce from sector 54 and it recovers the original key in seconds.
 However later new variants emerged which used fixed Salsa20 for example Mischa v2 and GoldenEye which were not crackable by external tools.
 
-#Original Author of Red Petya publishes his secp192k1 private key
+# Original Author of Red Petya publishes his secp192k1 private key
 After almost one year of RedPetya, on June 27 2017 a massive NotPetya(malware based on GoldenEye kernel) malware cyberattack appeared
 that was actually wiper and destroyed MFT of infected computers it also used EternalBlue to spread across local networks like a worm.
 This forced the original author of Petya to publish his secp192k1 private key:
