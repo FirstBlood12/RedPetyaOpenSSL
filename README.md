@@ -88,7 +88,7 @@ the characters must be from Base54 alphabet otherwise they are skipped.
 4. RedPetya kernel will read the 8 byte nonce from sector 54(it is just before onion links).
 5. RedPetya kernel will use the 32 byte key that is get by the user 16 byte key using a custom algorithm.
 6. Sector 55(verification sector) will be read in memory buffer and it will be decrypted with Salsa10 256 bit using encoded key from the user and 8 byte nonce from sector 54.
-7. RedPetya kernel will check if every byte from decrypted sector 55 buffer is 0x37, if it is than means the key is correct and will be used to decrypt the MFT but if is not
+7. RedPetya kernel will check if every byte from decrypted sector 55 buffer is 0x37, if it is then means the key is correct and will be used to decrypt the MFT but if is not
 then RedPetyakernel prints Incorrect key and asks for key again.
 8. If entered key is correct RedPetya kernel will read sector 54 in buffer, it will set first byte of sector 54 to 0x02(MFT decrypted), it will write the encoded 32 byte key to sector 54 buffer, it will write sector 54 buffer to sector 54 and it will use encoded 32 byte key with 8 byte nonce to decrypt the MFT sectors and it will display Decrypting sector with a progress.
 9. After all MFT sectors of all NTFS partitions are decrypted RedPetya kernel will restore original MBR by reading sector 56 in buffer, decrypting every byte of it with XOR 0x37
